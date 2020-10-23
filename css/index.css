@@ -55,35 +55,38 @@ h1 {
 .background__movie03,
 .background__movie04,
 .background__movie05 {
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-    background-image: url("../img/desktop/movie01.jpg");
-    background-attachment: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
     grid-area: movie01;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 50px 1.8fr;
+    gap: 0px 0px;
+    grid-template-areas: "num ." "img text";
 }
 
 .background__movie02 {
-    background-image: url("../img/desktop/movie02.jpg");
     grid-area: movie02;
 }
 
 .background__movie03 {
-    background-image: url("../img/desktop/movie03.jpg");
     grid-area: movie03;
 }
 
 .background__movie04 {
-    background-image: url("../img/desktop/movie04.jpg");
     grid-area: movie04;
 }
 
 .background__movie05 {
-    background-image: url("../img/desktop/movie05.jpg");
     grid-area: movie05;
+}
+
+.movie01__img,
+.movie02__img,
+.movie03__img,
+.movie04__img,
+.movie05__img {
+    height: 600px;
+    width: 450px;
+    grid-area: img;
 }
 
 .background__review01,
@@ -91,5 +94,9 @@ h1 {
 .background__review03,
 .background__review04,
 .background__review05 {
-    grid-area: review;
+    grid-area: text;
+}
+
+h3 {
+    grid-area: text;
 }
