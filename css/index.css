@@ -1,4 +1,52 @@
 /* *********************************** */
+
+
 /* *** Estilos SOLO para index.html *** */
+
+
 /* *********************************** */
 
+
+/* HEADER (Aquí colocamos título y banner */
+
+.header__banner {
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 5rem;
+}
+
+
+/* MAIN (La lista de las películas) */
+
+.main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url("../img/svg/Abstract-Timekeeper.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__background {
+    width: 60%;
+}
+
+.movie01 {}
+
+.movie02 {}
+
+.movie03 {}
+
+.movie04 {}
+
+.movie05 {}
