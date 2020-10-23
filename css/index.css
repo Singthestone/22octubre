@@ -10,12 +10,14 @@
 /* HEADER (Aquí colocamos título y banner */
 
 .header__banner {
+    margin: 0px;
+    padding: 0px;
     position: relative;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     position: absolute;
     top: 50px;
     left: 50px;
@@ -26,27 +28,63 @@ h1 {
 /* MAIN (La lista de las películas) */
 
 .main {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    background-image: url("../img/svg/Abstract-Timekeeper.svg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    gap: 0px 0px;
+    grid-template-areas: ". main .";
 }
 
 .main__background {
-    width: 60%;
+    height: 1000px;
+    margin: 0px;
+    padding: 40px;
+    grid-area: main;
+    background-color: var(--color-white);
+    display: grid;
+    grid-template-columns: 25% 1.2fr 0.8fr 25%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". movie review .";
 }
 
-.movie01 {}
+.background__movie01,
+.background__movie02,
+.background__movie03,
+.background__movie04,
+.background__movie05 {
+    margin: 0px;
+    padding: 0px;
+    width: 150px;
+    height: 220px;
+    grid-area: movie;
+    background-image: url("../img/desktop/movie01.jpg");
+    background-attachment: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
-.movie02 {}
+.background__movie02 {
+    background-image: url("../img/desktop/movie02.jpg");
+}
 
-.movie03 {}
+.background__movie03 {
+    background-image: url("../img/desktop/movie03.jpg");
+}
 
-.movie04 {}
+.background__movie04 {
+    background-image: url("../img/desktop/movie04.jpg");
+}
 
-.movie05 {}
+.background__movie05 {
+    background-image: url("../img/desktop/movie05.jpg");
+}
+
+.background__review01,
+.background__review02,
+.background__review03,
+.background__review04,
+.background__review05 {
+    grid-area: review;
+}
