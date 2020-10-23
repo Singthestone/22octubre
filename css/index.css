@@ -30,6 +30,7 @@ h1 {
 .main {
     margin: 0px;
     padding: 0px;
+    height: 100vh;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     gap: 0px 0px;
@@ -37,16 +38,16 @@ h1 {
 }
 
 .main__background {
-    height: 1000px;
+    height: 100%;
     margin: 0px;
     padding: 40px;
     grid-area: main;
     background-color: var(--color-white);
     display: grid;
-    grid-template-columns: 25% 1.2fr 0.8fr 25%;
-    grid-template-rows: 1fr;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: ". movie review .";
+    grid-template-areas: ". movie01 ." ". movie02 ." ". movie03 ." ". movie04 ." ". movie05 .";
 }
 
 .background__movie01,
@@ -56,29 +57,33 @@ h1 {
 .background__movie05 {
     margin: 0px;
     padding: 0px;
-    width: 150px;
-    height: 220px;
-    grid-area: movie;
+    height: 100vh;
     background-image: url("../img/desktop/movie01.jpg");
     background-attachment: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
+    grid-area: movie01;
+    display: flex;
 }
 
 .background__movie02 {
     background-image: url("../img/desktop/movie02.jpg");
+    grid-area: movie02;
 }
 
 .background__movie03 {
     background-image: url("../img/desktop/movie03.jpg");
+    grid-area: movie03;
 }
 
 .background__movie04 {
     background-image: url("../img/desktop/movie04.jpg");
+    grid-area: movie04;
 }
 
 .background__movie05 {
     background-image: url("../img/desktop/movie05.jpg");
+    grid-area: movie05;
 }
 
 .background__review01,
